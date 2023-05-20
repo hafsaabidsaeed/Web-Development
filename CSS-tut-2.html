@@ -1,0 +1,621 @@
+<html>
+<head>
+    <title>Types of CSS</title>
+	<link href="external.css" rel="stylesheet" type="text/css">
+	<style>
+
+	.heading2{
+	color:blue;
+	font-family:'Times New Roman', Times, serif;
+	font-size:36px;
+	padding: 30px; 
+	border:2px solid black;
+	background-color:#ebbff0;
+    
+	}
+
+    body{
+        background-color: rgb(194, 221, 194);
+        background-image: url(back4.png);
+       background-size: 9000px;
+        background-position:center;
+    }
+
+    #p1{
+        color: #9a5ea1;    
+        margin: 40px 100px;
+        padding: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+
+    .font{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 40px;
+        font-weight: lighter;
+        font-style: italic;
+        font-variant: small-caps;
+    }
+
+    .s1{
+        margin: 40px 100px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px;
+        font-variant: normal;
+    }
+
+    .text{
+        color: rgb(43, 0, 255);
+        text-align: center;
+        text-decoration: line-through;
+        font-size: 40px;
+        word-spacing: 40px;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+    }
+
+    #p2{
+        color: #9a5ea1;    
+        margin: 40px 100px;
+        padding: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+        word-spacing: 60px;
+    }
+    
+    #p7{
+        color: #3b0940;    
+        margin: 70px 100px;
+        padding: 70px;
+        border: 4px solid ;
+        border-color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+        
+    }
+    
+    .s3{
+        margin: 40px 100px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px;
+        font-variant: normal;
+    }
+    
+    .s4{
+        margin: 40px 100px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px;
+        font-variant: normal;
+    }
+
+    a{
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(87, 138, 36);
+        font-size: 40px;
+        text-transform: capitalize;
+        text-decoration: none;
+        display: block;    
+    }
+
+    /* unvisited link */
+    a:link{
+        color: red;
+    }
+
+    /* visited link */
+    a:visited{
+        color: rgb(7, 82, 111);
+
+    }
+
+    a:hover{
+        text-transform: uppercase;
+        font-weight: bold;
+        color: palevioletred;    
+    }
+
+    /* table */
+    table{
+        background-image: url(back3.png);
+        background-size: 1280px;
+        border-style: dashed;
+        border-radius: 30px;
+        border-width: 5px;
+        border-collapse: collapse;
+    }
+
+    th{
+        font-weight: bold;
+        font-size: 20px;
+        background-color: skyblue; 
+    }
+
+    td{
+        vertical-align: bottom;
+    }
+
+    tr{
+        height: 80px;
+    }
+
+        /* outline  and borders*/
+    .dotted{
+        border: 6px dotted darkgreen;
+    }
+
+    .dashed{
+        border: 6px dashed darkorchid;
+    }
+
+    .solid{
+        border: 4px solid darkorange;    
+    }
+
+    .double{
+        border: 6px double;
+    }
+
+    .groove{
+        border: 5px groove darkred;
+    }
+
+    .ridge{
+        border: 5px ridge darkcyan;
+    }
+
+    .inset{
+        border: 5px inset sienna;
+    }
+
+    .outset{
+        border: 5px outset indianred;
+    }
+
+    .none{
+        border: 5px none;
+    }
+
+    .hidden{
+        border: 5px hidden darkred;
+    }
+
+    #b11{
+        border-style:  dotted dashed solid double;
+    }
+
+    #p8{
+        height: 100px;
+        width: 900px;
+        text-align: center;
+        padding-top: 40px;
+        border: 4px solid green;
+    }
+    /* links */
+    .btn{
+        background-color:teal;
+         color: white;
+        padding: 14px 25px;
+        text-align: center;
+        font-size: 20px;
+        text-decoration: none;
+        margin: 6px;
+    }
+
+    .link-buttons{
+        display: flex;
+    }
+
+    .link-buttons a:hover button{
+        background-color: #afece6;
+        color: black;
+        font-size: 25px;
+
+    }
+    .link-buttons a:visited button{
+        background-color: burlywood;
+        color: navy;
+    }
+
+    /* list */
+    ol{
+        /* list-style-type: lower-alpha; */
+        /* list-style-type: upper-alpha; */
+        /* list-style-type: upper-roman; */
+        list-style-type: lower-latin;
+        font-size: 20px;
+        
+    }
+
+    ul li{
+        background-color: brown;
+        color: white;
+        margin: 10px;
+        font-size: 25px;
+        list-style-type:square;
+    }
+
+    /* CSS Position */
+    .s11 img{
+        /* position:relative; */
+        /* position:static; */
+        /* position:absolute; */
+        /* position:fixed; */
+        position: absolute; 
+        z-index: 1;
+    }
+
+    /* z-index */
+    .s12 img{
+        position:sticky;
+        left: 0px;
+        top: 0px;
+        z-index: 2;
+    }
+
+    #over1{
+
+        border: 3px solid black;
+        width: 500px;
+        height: 300px;
+        overflow: scroll;
+        margin-left: 20px;
+
+    }
+
+    #over2{
+
+        border: 3px solid black;
+        width: 500px;
+        height: 170px;
+        overflow: hidden;
+        margin-left: 20px;
+
+    }
+
+    #over3{
+
+        border: 3px solid black;
+        width: 400px;
+        height: 170px;
+        overflow-x:hidden;
+        overflow-y: scroll;
+        margin-left: 20px;
+
+    }
+
+    .s14 #f1{
+        float: right;
+        font-size: 28px;
+    }
+
+    .s14 #f2{
+        float: left;
+        font-size: 28px;
+    }
+
+    .s14 #f3{
+        float: inherit;
+        font-size: 28px;
+    }
+
+    /* .dropdown{
+            display: flex;
+            width: 100%;
+            height: 10%;
+            background-color: red; 
+            justify-content: space-around;
+            flex-wrap: wrap;
+            position: absolute;
+            margin-top: 85px;
+            font-size: 30px;
+            padding-top: 100px;
+            font-family: 'Source Code Pro', monospace;
+            font-style: italic;
+            padding-left: 30px;
+            border: 2px solid black;
+        }   */
+    
+
+
+
+	</style>
+	
+</head>
+
+
+<body>
+	<div class="container">
+    
+    <h1 style="color:purple; font-size:36px; padding: 30px; border:2px solid black; background-color:#afece6;" >Inline CSS</h1>
+	
+	<h2 class="heading2">Internal CSS</h2>
+	
+	<h3>External CSS</h3>
+
+	<p id="p1">
+        
+        The below- mentioned long essay is for pupils aspiring for competitive exam and those belonging to classes 6,7,8,9, and 10, respectively. 
+        The essay guides the students with their class assignments, comprehension tasks, 
+        and even for competitive examinations.
+
+        Google is the leading Internet search engine optimization and provides its primary services with targeted search outcomes. It holds consequences
+        from over eight billion web pages. Google was developed by two Stanford dropouts Larry Page and Sergey Brin, from a college project. The current 
+        CEO of Google is the proud Indian- Sundar Pichai.
+
+        Google made a life-changing announcement in August 2015, where it declared to restructure its leading subsidiary conglomerate- Alphabet Inc. This
+        subsidiary was the umbrella company that managed all of the Alphabet’s Internet interests. While Larry Page upheld his position as the CEO of Alphabet,
+        Sundar Pichai was nominated as the CEO of Google.
+
+    </p>
+
+    <div class="s1">
+        <h2 class="font">Font Property</h2>
+        <p>
+            The below- mentioned long essay is for pupils aspiring for competitive exam and those belonging to classes 6,7,8,9, and 10, respectively. 
+        The essay guides the students with their class assignments, comprehension tasks, 
+        and even for competitive examinations.
+        </p>
+    </div>
+
+
+    <div class="s2">
+        <h2 class="text">
+            Text Properties
+        </h2>
+
+        <p id="p2">
+            The below- mentioned long essay is for pupils aspiring for competitive exam and those belonging to classes 6,7,8,9, and 10, respectively. 
+            The essay guides the students with their class assignments, comprehension tasks, 
+            and even for competitive examinations.
+
+        </p>
+
+    </div>
+
+    <div class="s3">
+        <h2 class="font">
+            Links
+        </h2>
+        <center>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            <a href="https://twitter.com/?lang=en" target="_blank">Twitter</a>
+            <a href="https://www.whatsapp.com/" target="_blank">Whatsapp</a>
+        </center>
+
+    </div>
+
+    <div class="s4">
+        <h2 class="font">
+            Backgrounds
+        </h2>
+        
+    </div>
+    <br> <br>
+    <div class="s4">
+        <h2 class="font">
+            Styling Tables
+        </h2>
+        <table border="2" cellpadding="15">
+            <br>
+            <br>
+                <thead>
+                    <tr>
+                        <th> My Profile </th>
+                        <th> Name </th>
+                        <th> class </th>
+                        <th> Contact Number </th>
+                        <th> CNIC </th>
+                        <th> Address </th>
+                        <th> Link </th>
+                    </tr>
+    
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan="3"> <img src="image BIRD.jpg" height="200px" width="190px" style="padding-left: 25px;" > </td>
+                        <td> Hafsa Abid </td>
+                        <td> FA20-BSCS-B </td>
+                        <td> 03308113747 </td>
+                        <td> 0000-0000-0000 </td>
+                        <td> House no 789 block H street 7 </td>
+                        <td> <a href="#" >Click</a> </td>
+                    </tr>
+                    <tr>
+                        <!-- <td> <img src="city.jpg" height="150" width="100" > </td> -->
+                        <td> Sameed Shahid </td>
+                        <td> FA20-BSCS-B </td>
+                        <td> 033081135665 </td>
+                        <td> 0000-0000-0000 </td>
+                        <td> House no 456 block K street 7 </td>
+                        <td> <a href="#"> Click</a> </td>
+                    </tr>
+                    <tr>
+                        <!-- <td> <img src="galaxy1.jpg" height="150" width="100" > </td> -->
+                        <td> Amna Imad </td>
+                        <td> FA20-BSCS-C </td>
+                        <td> 03308114567 </td>
+                        <td> 0000-0000-1111 </td>
+                        <td> House no 543 block H street 7 </td>
+                        <td> <a href="#">Click</a> </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" target="_blank"> Click to View</a></td>
+                        <td colspan="6"><center>Student Information Table</center></td>
+                    </tr>
+                
+                </tbody>
+                        
+        </table></center>
+        
+    </div>
+
+    <div class="s5">
+        <h2 class="font">Borders</h2>
+        <p style="font-size: 30px;" id="b1" class="dotted">Dotted</p>
+        <p style="font-size: 30px;" id="b2" class="dashed">Dashed</p>
+        <p style="font-size: 30px;" id="b3" class="solid">Solid</p>
+        <p style="font-size: 30px;" id="b4" class="double">Double</p>
+        <p style="font-size: 30px;" id="b5" class="groove">Groove</p>
+        <p style="font-size: 30px;" id="b6" class="ridge">Ridge</p>
+        <p style="font-size: 30px;" id="b7" class="inset">Inset</p>
+        <p style="font-size: 30px;" id="b8" class="outset">outset</p>
+        <p style="font-size: 30px;" id="b9" class="none">None</p>
+        <p style="font-size: 30px;" id="b10" class="hidden">Hidden</p>
+        <p style="font-size: 30px;" id="b11">Dotted Dashed Solid double</p>
+    </div>
+
+
+    <div class="s6">
+        <h2 class="font"> Margin and padding</h2>
+
+        <p id="p7">
+            The below- mentioned long essay is for pupils aspiring for competitive exam and those belonging to classes 6,7,8,9, and 10, respectively. 
+            The essay guides the students with their class assignments, comprehension tasks, 
+            and even for competitive examinations.
+
+        </p>
+    </div>
+
+    <div class="s7">
+        <h2 class="font">
+            Height and width
+
+            <p id="p8">
+                set height and width
+            </p>
+        </h2>
+    </div>
+
+    <div class="s8">
+        <h2 class="font">
+            CSS Outline style
+        </h2>
+        <p style="font-size: 30px;" id="out1" class="dotted">Dotted</p>
+        <p style="font-size: 30px;" id="out2" class="dashed">Dashed</p>
+        <p style="font-size: 30px;" id="out3" class="Solid">Solid</p>
+        <p style="font-size: 30px;" id="out4" class="double">Double</p>
+        <p style="font-size: 30px;" id="out5" class="groove">Groove</p>
+        <p style="font-size: 30px;" id="out6" class="ridge">Ridge</p>
+        <p style="font-size: 30px;" id="out7" class="inset">Inset</p>
+        <p style="font-size: 30px;" id="out8" class="outset">outset</p>
+        <p style="font-size: 30px;" id="out9" class="none">None</p>
+        <p style="font-size: 30px;" id="out10" class="hidden">Hidden</p>
+    </div>
+
+    <div class="s9">
+        <h2 class="font">
+            Link Buttons
+        </h2>
+        <div class="link-buttons">
+            <a href="CSS-tut-1.html"><button class="btn">Home</button></a>
+            <a href="external.css"><button class="btn">Services</button></a>
+            <a href="CSS-tut-1.html"><button class="btn">About</button></a>
+            <a href="external.css"><button class="btn">Help</button></a>
+        </div>
+        <br>
+        <b><strong>the green ones are unvisited links and skin ones are visited links </strong></b>
+
+    </div>
+
+    
+    <div class="s10">
+        <h2 class="font">
+            List styling
+        </h2>
+        <ol>
+            <li>Momina</li>
+            <li>Shazia</li>
+            <li>Abid</li>
+            <li>Umna</li>
+            <li>Zainab</li>
+            <li>Hafsa</li>
+        </ol>
+
+        <h2 class="font">
+            Styling List With Colors
+        </h2>
+        <ul>
+            <li>Momina</li>
+            <li>Shazia</li>
+            <li>Abid</li>
+            <li>Umna</li>
+            <li>Zainab</li>
+            <li>Hafsa</li>
+        </ul>
+    </div>
+
+    <div class="s11">
+        <h2 class="font">
+            Position Property
+        </h2>
+        <img src="image BIRD.jpg" alt="bird">
+    </div>
+
+    <div class="s12">
+        <h2 class="font">
+            Z-Index
+        </h2>
+        <img src="back2.png" alt="bird">
+    </div>
+
+    <div class="s13" style="margin-top: 300px;">
+        <h2 class="font">
+            Overflow Property (scroll)
+        </h2>
+        <p id="over1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error qui labore repellendus, voluptatibus debitis accusamus, unde maxime harum eos soluta consequuntur voluptate distinctio assumenda culpa facilis officia autem! Enim, voluptatibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi maiores voluptas laboriosam in, enim deleniti inventore eaque debitis perspiciatis possimus ratione nostrum esse, beatae unde iste neque similique consequatur ab? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, reiciendis. Architecto iure modi accusantium. Inventore ducimus nobis dicta fugit libero veniam tempore quaerat expedita deserunt! Hic eaque sed atque quibusdam consequatur enim temporibus repellat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptas facilis commodi rerum earum iusto veniam sequi ipsam voluptates excepturi asperiores ducimus tenetur eius, maxime amet dignissimos sit reprehenderit nulla laboriosam unde atque incidunt.
+        </p>
+
+        <h2 class="font">
+            Overflow Property (hidden)
+        </h2>
+        <p id="over2">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error qui labore repellendus, voluptatibus debitis accusamus, unde maxime harum eos soluta consequuntur voluptate distinctio assumenda culpa facilis officia autem! Enim, voluptatibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi maiores voluptas laboriosam in, enim deleniti inventore eaque debitis perspiciatis possimus ratione nostrum esse, beatae unde iste neque similique consequatur ab? Lorem, ipsum dolor sit am Enim, voluptatibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi maiores voluptas laboriosam in, enim deleniti inventore eaque debitis perspiciatis possimus ratione nostrum esse, beatae unde iste neque similique consequatur ab? Lorem, ipsum dolor sit am
+
+        </p>
+        <h2 class="font">
+            Overflow Property (x and y)
+        </h2>
+        <p id="over3">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error qui labore repellendus, voluptatibus debitis accusamus, unde maxime harum eos soluta consequuntur voluptate distinctio assumenda culpa facilis officia autem! Enim, voluptatibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi maiores voluptas laboriosam in, enim deleniti inventore eaque debitis perspiciatis possimus ratione nostrum esse, beatae unde iste neque similique consequatur ab? Lorem, ipsum dolor sit am Enim, voluptatibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi maiores voluptas laboriosam in, enim deleniti inventore eaque debitis perspiciatis possimus ratione nostrum esse, beatae unde iste neque similique consequatur ab? Lorem, ipsum dolor sit am
+
+        </p>
+
+    </div>
+
+    <div class="s14">
+        <h2 class="font">
+            Float Property
+        </h2>
+        <p id="f1" >This is float right</p>
+        <p id="f2" >This is float left</p>
+        <p id="f3" >This is float inherit</p>
+
+    </div>
+<!-- 
+    <div class="dropdown">
+            <footer>
+                <h3> Dropdown menu: <font style="color: rgb(127, 211, 245);"> <a href="dropdown.html" target="_blank">Dropdown </a> </font> </h3>&nbsp; &nbsp; &nbsp;
+                
+            </footer>
+        </div> -->
+
+        <div class="s15">
+            <h2 class="font">
+                Forms
+            </h2>
+            <form action=".">
+                <label for="name">Name:</label>
+                <input type="text" name="myname" id="name">
+            </form>
+        </div>
+
+    
+
+
+    </div>
+
+</body>
+</html>
